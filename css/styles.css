@@ -1,0 +1,293 @@
+/* === Global Styles === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #FFF5F5; /* Warna latar belakang lebih lembut */
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+/* === Header & Navigation === */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #A00000; /* Merah elegan */
+    border-bottom: 3px solid #870000; /* Merah tua */
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF3E0; /* Warna emas lembut */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #FFD700; /* Emas cerah */
+}
+
+/* === Logo Styling === */
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+}
+
+/* === Hero Section === */
+.hero {
+    padding: 2px;
+    background: linear-gradient(135deg, #A00000, #FF4500); /* Gradasi merah elegan */
+    color: white;
+    font-weight: bold;
+}
+
+/* === Content Section === */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px; /* Jarak antar elemen */
+}
+
+/* Placeholder untuk Gambar */
+.image-placeholder {
+    width: 200px;
+    height: 150px;
+    background: lightgray;
+    margin: 0 auto;
+}
+
+/* === Contact Form === */
+.contact-form {
+    text-align: left;
+    width: 500px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* === Features Section === */
+.features {
+    padding: 30px;
+    background: #fff;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.features li span {
+    background: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+/* === Packages Section === */
+.packages {
+    ackground-color: #FFF5F5;;
+    padding: 40px 5vw;
+}
+
+.package-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.package {
+    background: linear-gradient(135deg, #FF6B6B, #FFA07A);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* === Closing Section === */
+.closing {
+    padding: 40px;
+    background: white;
+}
+
+.closing button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* === Footer === */
+footer {
+    padding: 20px;
+    background: linear-gradient(135deg, #A00000, #FF4500);
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+/* === Slideshow Styling === */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    width: 700px;  /* Ukuran maksimal */
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* === Responsive Design === */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .slideshow-container {
+        width: 90%;
+        height: auto;
+    }
+    
+    .package-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 414px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .hero, .content, .contact-form, .features, .packages, .closing {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .slideshow-container {
+        width: 100%;
+    }
+    
+    .contact-form {
+        text-align: left !important; /* Pastikan tetap rata kiri */
+        display: block; /* Agar tidak sejajar dengan input */
+        width: 100%; /* Sesuaikan agar tidak mengecil */
+    }
+    
+    .package-list {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+    
+    .closing {
+        padding: 20px;
+    }
+    
+    .closing button {
+        width: 100%;
+    }
+}

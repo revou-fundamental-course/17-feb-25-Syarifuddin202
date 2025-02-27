@@ -3,9 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Habibi Celluler</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="asset/images.png" alt="Habibi Celluler Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#our">Service</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#call">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Habibi Celluler</h1>
+        <p>Your happiness is our happiness</p>
+    </section>
+    
+    <!-- Content Section -->
+    <section class="content">
+        <!-- Slideshow Testimonial -->
+        <div class="testimonial">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="asset/pulsa1.png" alt="Testimonial Image 1" class="testimonial-image">
+                </div>
+                <div class="slide fade">
+                    <img src="asset/pulsa2.jpg" alt="Testimonial Image 2" class="testimonial-image">
+                </div>
+                <div class="slide fade">
+                    <img src="asset/pulsa3.jpg" alt="Testimonial Image 3" class="testimonial-image">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Form Pengisian Pulsa -->
+        <div class="contact-form">
+            <h2>Isi Pulsa</h2>
+            <p>Memberikan layanan pulsa yang cepat, aman, dan terpercaya dengan harga yang kompetitif.</p>
+            <form id="contact-form">
+                <label for="name">Nomor HP:</label>
+                <input type="tel" id="name" name="name" placeholder="Masukkan nomor HP" required>
+    
+                <label for="nominal">Pilih Nominal Pulsa:</label>
+                <select id="nominal" name="nominal" required>
+                    <option value="">Pilih Nominal</option>
+                    <option value="10000">Rp 10,000</option>
+                    <option value="20000">Rp 20,000</option>
+                    <option value="50000">Rp 50,000</option>
+                    <option value="100000">Rp 100,000</option>
+                </select>
+    
+                <label for="interest">Metode Pembayaran:</label>
+                <select id="interest" name="interest" required>
+                    <option value="">Pilih Metode Pembayaran</option>
+                    <option value="transfer">Transfer Bank</option>
+                    <option value="dana">Dana</option>
+                    <option value="ovo">Ovo</option>
+                </select>
+    
+                <button type="submit">Beli Pulsa</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Tentang Kami Section -->
+    <section class="features">
+        <h2 id="about">About</h2>
+        <ul>
+            <li><span>1</span> Kami menyediakan berbagai layanan pulsa dan paket data.</li>
+            <li><span>2</span> Layanan cepat dan aman.</li>
+            <li><span>3</span> Berbagai metode pembayaran tersedia.</li>
+        </ul>
+    </section>
+    
+    <!-- Layanan Section -->
+    <section class="packages">
+        <h2 id="our">Service</h2>
+        <div class="package-list">
+            <div class="package">
+                <h3>Pulsa</h3>
+                <p>Berbagai pilihan pulsa untuk semua operator.</p>
+            </div>
+            <div class="package">
+                <h3>Paket Data</h3>
+                <p>Paket data internet dengan harga terjangkau.</p>
+            </div>
+            <div class="package">
+                <h3>Token Pulsa</h3>
+                <p>Transaksi token pulsa cepat dan aman.</p>
+            </div>
+            <div class="package">
+                <h3>Dana</h3>
+                <p>Top-up saldo DANA dengan mudah.</p>
+            </div>
+            <div class="package">
+                <h3>Ovo</h3>
+                <p>Isi ulang saldo OVO dengan cepat.</p>
+            </div>
+            <div class="package">
+                <h3>Voucher Game</h3>
+                <p>Top-up berbagai voucher game.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Hubungi Kami Section -->
+    <section class="closing">
+        <h2>Contact</h2>
+        <p>Jl. Lintas Sumatra Duri-Dumai No.km 14, Sebangar, Kec. Mandau, Kota Pekanbaru, Riau 28784</p>
+        <p>Email: <a href="mailto:muhammadsofian25@gmail.com">muhammadsofian25@gmail.com</a></p>
+        <p>Telepon: 0812-3456-7890</p>
+        <button id="call">CALL TO ACTION</button>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>Habib Celluler</p>
+        <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2019 Habibi Celluler</p>
+    </footer>
+    
+    <!-- Script File -->
+    <script src="js/script.js"></script>
 </body>
 </html>
